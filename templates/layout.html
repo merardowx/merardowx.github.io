@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portafolio</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+
+    <div clas="container">
+        <header id="header">
+            <div id="name">
+                <a href="/"><h3>Lxcxntxry</h3></a> |
+                <span>Coding & Desing</span>
+            </div>
+            
+            <div id="provider">
+                <a href="">Resume</a> |
+                <a href="">Projets</a> |
+                <a href="/YouTube">YouTube</a> |
+                <a href="">Personal</a>
+            </div>
+
+        </header>
+
+        <div class="maininfo">
+            <div id="avatar">
+                <img src="{{ url_for('static', filename='images/WX-c.png') }}" alt="avatar">
+            </div>
+
+            <div class="about">
+                <h2>Lxcxntxry</h2>
+                <h3>A bit About Me</h3>
+
+                <span>
+                    Allow me to introduce you to a talented 18-year-old programmer. With a burning passion for
+                    technology and an unwavering drive for excellence, this young prodigy has demonstrated
+                    astonishing
+                    mastery in the world of programming.
+                </span>
+
+                <div class="links">
+                    <div id="link1">
+                        <a href="">Resume</a>
+                    </div>
+
+                    <div id="link2">
+                        <a href="">Proyects</a>
+                    </div>
+
+                    <div id="link3">
+                        <a href="">YouTube</a>
+                    </div>
+
+                    <div id="link4">
+                        <a href="">Personal</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div id="footerBtn">
+                    <button>Contact Me</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="container p-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+
+</html>
